@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#contenedor{
+    width: 90%;
+    margin:auto;
+    border:1px solid gray;
+    padding: 10px;
+}
+#cabecera{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;
+    height: 100px; 
+    background-color: #F2CF1D;
+    border-bottom: 2px solid grey; 
+    /*1 posicionamiento fijo*/
+
+
+
+    /*position:fixed;top:0;width: 90%;z-index:100;*/
+     /* El elemento no conserva el espacio que ocupaba en su posición original.
+    El elemento no se moverá junto con el desplazamiento de la página.
+    El elemento podrá superponerse a otros. */  
+    
+}
+#cabecera h1{    
+    font-family: Helvetica;
+    font-style: italic;
+    text-transform: uppercase;    
+}
+
+#menu > ul {
+    display: flex;
+    flex-direction: row;   
+    list-style-type: none;
+    font-size: 10pt;
+    height: 100%;
+}
+#menu a {
+    color: darkslategrey;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+#menu a:hover {
+    background-color: dimgrey;
+    color: white;
+}
+#logo{
+    width:40%;   
+}
+#logo img{
+    width:100%;
+    /*3Posicionamiento relativo*/  
+    
+    
+    
+    
+    /*position:relative;top:0;left: 50%;*/   
+      /*El desplazamiento del elemento conserva el espacio que ocupaba en su posición original.
+    El elemento se moverá junto con el desplazamiento (vertical u horizontal) de la página.
+    El elemento podrá superponerse a otros.*/ 
+}
+#personajes img {  
+   width: 50%;
+    /*4Posicionamiento absoluto*/    
+
+    /* position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);opacity: 0.7; */
+    /*El desplazamiento se realiza en relación al elemento padre con posicionamiento diferente a estático (static) o al elemento body.
+   El desplazamiento del elemento no conserva el espacio que ocupaba en su posición original.
+    El elemento se moverá junto con el desplazamiento (vertical u horizontal) de la página.
+    El elemento podrá superponerse a otros.*/
+  
+}
+
+ #contenido {
+ 
+    padding:10px;
+    height: 2300px;
+    margin-top: 0;
+    /*5Posicion relativo*/   
+
+    /*position relative*/
+   /*Al perder la cabecera su posicion desplazo el contenido desde arriba la misma medida de su altura originaL margin-top:100px*/
+   /*Para que el bloque de personaje (p. absolute)se desplace con respecto al contenido se debe aplicar position relative*/
+} 
+#contenido div{
+    margin:20px;
+}
+#contenido li{
+    margin-left:20px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom:10px ;    
+}
+p{
+    font-weight: 100;
+    text-align: justify;
+}
+h2{
+    text-decoration: underline;
+    margin-bottom: 10px;
+    background-color: black;
+    color:white;
+    padding:10px;
+
+    /*2Posicionamiento Sticky*/
+    
+    
+    /*position: sticky;top:100px;z-index: 20;*/
+    /*el elemento es posicionado en base al ancestro más cercano que se desplace.
+    se utiliza cuando se desea posicionar un elemento en un lugar específico de forma fija mientras continuamos el desplazamiento del contenido.
+    El elemento se mantendrá en su posición hasta que el desplazamiento del contenido lo alcance.
+*/
+
+}
+
+
+
